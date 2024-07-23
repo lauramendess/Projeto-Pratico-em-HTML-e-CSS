@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#form_contato {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact {
+    width: 45%;
+    border: 15px solid violet;
+    background-color: #eec6e9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 2%;
+    padding: 2%;
+}
+
+input, textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border: 3px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact label {
+    font-weight: bold;
+    padding: 5px;
+}
+
+#form_contato h2{
+    position: absolute;
+    background: violet;
+    border: 1px solid black;
+    border-radius: 7px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 19px;
+    margin-bottom: 33%;
+}
+
+.information {
+    position: absolute;
+    width: 5%;
+    display: flex;
+    flex-direction: column;
+}
+
+.opcoes-contato .lista-contato {
+    display: flex;
+    white-space: nowrap;
+    align-items: center;
+    margin: 10%;
+    margin-left: 50%;
+}
+
+.opcoes-contato .lista-contato p {
+    margin: 10px;
+    font-weight: bold;
+}

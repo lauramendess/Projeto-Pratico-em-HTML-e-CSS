@@ -1,0 +1,596 @@
+@import url('https://fonts.googleapis.com/css2?family=Ga+Maamli&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+    width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+    background: white;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #cc77c3f3;
+    border-radius: 7px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background: #ae0e69;
+}
+
+.max-width {
+    width: 100%;
+    min-height: auto;
+}
+
+.fundo1 {
+    background-color: #262424;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+}
+
+.container {
+    max-width: 1680px;
+    margin: 0 auto;
+    display: flex;
+    min-height: 95vh;
+}
+
+.right {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: 600px;
+    max-height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2%;
+}
+
+.title2 {
+    text-shadow: 2px 2px 2px gray;
+    font-family: "Ga Maamli", sans-serif;
+    position: absolute;
+    top: 5%;
+    font-size: 70px;
+    color: black;
+    z-index: 10;
+}
+
+.call {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #262424;
+    margin-top: 150px;
+}
+
+#cabecalho h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 50px;
+    background-image: linear-gradient(210deg, #ff5277 0, #ff4483 10%, #ff378b 20%, #f92b8e 30%, #da228d 40%, #b61986 50%, #92137c 60%, #731274 70%, #56136b 80%, #3c1465 90%, #221560 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    padding: 35px;
+    padding-top: 45px;
+    margin-left: 40px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+#cabecalho a {
+    text-decoration: none;
+    color: inherit;
+    background-clip: inherit;
+    -webkit-background-clip: inherit;
+}
+
+.barra {
+    background: black;
+    height: 170px;
+    position: fixed;
+    width: 100%;
+    z-index: 14;
+}
+
+#cabecalho .options {
+    float: right;
+    margin-top: -130px;
+}
+
+#cabecalho .options a {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    color: white;
+    margin: 14px;
+    margin-top: -7px;
+    font-size: 15px;
+    display: inline-block;
+    transition: transform 0.2s ease;
+}
+
+.options a:hover {
+    background: #b61986;
+    transform: scale(1.4);
+}
+
+.barrinha {
+    background: rgb(204, 121, 187);
+    color: black;
+    margin-top: 0px;
+    z-index: 14;
+    font-weight: bold;
+}
+
+.barrinha p {
+    animation: barrinha 20s linear infinite;
+    font-size: 13px;
+    padding: 5px;
+}
+
+@keyframes barrinha {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+img {
+    width: 70%;
+    object-fit: contain;
+}
+
+header .container {
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.principal {
+    position: relative;
+    width: 90%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    transition: 3s ease;
+}
+
+.principal img {
+    width: auto;
+    height: 100%;
+    object-fit: contain;
+    display: inline-block;
+    margin-bottom: -35px;
+}
+
+#cabecalho button {
+    background: #ed87e3f3;
+    color: black;
+    position: absolute;
+    bottom: 6%;
+    left: 5%;
+    padding: 12px 17px;
+    margin-top: 60px;
+    margin-left: 40px;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.5s ease;
+    border-radius: 2px;
+    box-shadow: 2px 2px 2px black;
+    cursor: pointer;
+    z-index: 10;
+}
+
+button:hover {
+    border: 1px solid #000000;
+    border-radius: 4px;
+    background: violet;
+    color: white;
+    transform: scale(1.2);
+    font-weight: bold;
+}
+
+button a{
+    text-decoration: none;
+    color: black;
+}
+
+#topo {
+    width: 40px;
+    background: rgb(239, 8, 158);
+    position: fixed;
+    bottom: 15px;
+    left: 15px;
+    padding: 10px;
+    text-align: center;
+    z-index: inherit;
+    border-radius: 150px;
+}
+
+#topo:hover {
+    transform: scale(1.2);
+}
+
+.fundo2 {
+    background-color: #343232;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+}
+
+#prom .container {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.frase {
+    width: 100%;
+    min-height: 250px;
+    color: #ed87e2f3;
+    font-size: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.typing {
+    white-space: nowrap;
+    overflow: hidden;
+    animation: digitando 5s steps(43, end), infinite;
+}
+
+@keyframes digitando {
+    from {
+        width: 1ch;
+    }
+
+    to {
+        width: 43ch;
+    }
+}
+
+.line {
+    width: 80%;
+    height: 6px;
+    background: black;
+    position: relative;
+    top: 40px;
+}
+
+
+.text-1 {
+    width: 250px;
+    background: #ed87e3f3;
+    color: white;
+    position: relative;
+    top: -10px;
+    margin: auto;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.promo {
+    width: 100%;
+    min-height: 280px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.card {
+    width: 24%;
+    margin-top: -5%;
+    min-height: 130px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 2% 2%;
+    transition: 0.5s ease;
+}
+
+#prom .card {
+    border: 3px solid black;
+    background: white;
+    margin-bottom: 100px;
+}
+
+#prom .card:hover {
+    transform: scale(1.1);
+}
+
+#prom .card img {
+    width: 100%;
+}
+
+#prom .card h2 {
+    margin-top: 25px;
+    font-weight: bold;
+}
+
+#prom .card p {
+    margin-top: 12px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    font-size: 15px;
+    font-style: italic;
+}
+
+#prom button {
+    position: relative;
+    padding: 5px 14px;
+    background: #ed87e3f3;
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+    transition: 0.8s ease;
+    border-radius: 2px;
+    box-shadow: 2px 2px 2px black;
+    cursor: pointer;
+    margin-left: 155px;
+}
+
+footer {
+    background-color: #000000;
+    width: 100%;
+    color: #fff;
+    padding: 10px;
+}
+
+footer .container {
+    min-height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+footer .container a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+
+footer .container a:hover {
+    background: gray;
+    color: black;
+    border-radius: 50px;
+}
+
+footer span {
+    color: #ae0e69;
+    font-weight: bold;
+}
+
+.copy {
+    padding: 5px;
+    font-style: italic;
+}
+
+#info .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.slider .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.slider {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.item img {
+    width: 50px;
+    height: 50px;
+}
+
+.slides-item {
+    display: flex;
+    flex-direction: row;
+}
+
+.slides-item .item {
+    color: white;
+    width: 30%;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background: violet;
+    border: 1px solid black;
+}
+
+.slides-item .item .title-item {
+    width: 100px;
+    height: 90px;
+    padding: 4px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    white-space: nowrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slides-item .item .text-item {
+    background: rgb(255, 255, 255, 0.2);
+    box-shadow: 4px 4px 2px rgb(147, 9, 147);
+    border-radius: 5px;
+    width: 100%;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: cursive;
+    text-align: center;
+}
+
+.slides {
+    overflow: hidden;
+    max-width: 1400px;
+    margin: 50px 50px;
+}
+
+.slides .swiper-pagination-bullet {
+    background: #ae0e69;
+    height: 10px;
+    width: 10px;
+}
+
+.slides .swiper-slide-button {
+    color: #ae0e69;
+    margin-top: -50px;
+}
+
+.ajuste-title{
+    background-color: black;
+}
+
+@media only screen and (max-width: 600px) {
+    #cabecalho h1 {
+        font-size: 50px;
+    }
+
+    .barrinha p{
+        white-space: nowrap;
+    }
+
+    #cabecalho button {
+        font-size: 12px;
+        margin-bottom: 15px;
+    }
+
+    nav{
+        margin-right: 62px;
+    }
+
+    .title2 {
+        font-size: 50px;
+        margin-top: 20px;
+    }
+
+    .principal img {
+        width: 100%;
+    }
+
+    .principal .resol{
+        display: none;
+    }
+
+    .frase{
+        font-size: 15px;
+    }
+
+    .card {
+        width: 100%;
+        margin-top: -27%;
+    }
+
+    #prom button {
+        margin-left: 10px;
+        padding: 8px 12px;
+        font-size: 12px;
+    }
+
+    #info{
+        margin-top: -20%;
+        background-color:  #343232;
+    }
+
+    .copy{
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 798px) {
+    #cabecalho h1 {
+        font-size: 50px;
+    }
+
+    .barrinha p{
+        white-space: nowrap;
+    }
+
+    #cabecalho button {
+        font-size: 12px;
+        margin-bottom: 15px;
+        margin-left: 18%;
+    }
+
+    nav{
+        margin-right: 25%;
+    }
+
+    .title2 {
+        font-size: 60px;
+        margin-top: 20px;
+    }
+
+    .principal img {
+        width: 100%;
+    }
+
+    .principal .resol{
+        display: none;
+    }
+
+    .frase{
+        font-size: 20px;
+    }
+
+    .card {
+        width: 25%;
+        margin-top: -20%;
+    }
+
+    #prom button {
+        margin-left: 10px;
+        padding: 8px 12px;
+        font-size: 12px;
+    }
+
+    #info{
+        margin-top: -15%;
+        background-color:  #343232;
+    }
+
+    .copy{
+        font-size: 15px;
+    }
+}
